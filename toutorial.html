@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #B8EAFA;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 26px;
+            margin-top: 70px;
+        }
+        .cont{
+            text-align: center;
+        }
+        .mic{
+            width: 132px;
+            height: 132px;
+            font-size: 40px;
+            text-align: center;
+            background-color: white;
+            color: #000;
+            border-radius: 50%;
+            
+            position: absolute;
+            margin-top: 360px;
+            margin-left: 150px;
+        }
+        /* .mic i:hover{
+            width: 132px;
+            height: 132px;
+            background-color: grey;
+            cursor: pointer;
+            position: absolute;
+        } */
+        .mic i{
+            position: absolute;
+            border-radius: 50%;
+            margin-top: 40px;
+            margin-left: -15px;
+        }
+        img{
+            text-align: center;
+            margin-top: -85px;
+            margin-left: 100px;
+        }
+        .cont{
+            text-align: center;
+        }    
+        h4{
+            margin-top: 20px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+        }
+        h5{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="cont">
+        <h1>กดปุ่มเพื่อคุยกับน้องมีทัวร์</h1>
+        <div class="mic">
+            <i onclick="recognition.start()" class="fa-solid fa-microphone"></i>
+        </div>
+        <img src="https://sv1.img.in.th/C8oMy.png" alt="C8oMy.png" border="0" />
+
+        <h4 id="output"></h4>
+        <h5 id="res"></h5>
+    </div>
+
+    <script src="tutorial.js"></script>
+</body>
+</html>
